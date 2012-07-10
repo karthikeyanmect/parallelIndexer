@@ -1,0 +1,12 @@
+This program take "directory" as input.
+Store words and it occuring frequency in a Table
+At the end it prints top 10 high freuwncy words.
+
+Example
+./indexer /
+./indexer ~
+
+
+
+
+-Karthikeyan

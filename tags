@@ -1,0 +1,115 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AtomicState	AtomicState.h	/^	AtomicState() :$/;"	f	class:AtomicState
+AtomicState	AtomicState.h	/^class AtomicState {$/;"	c
+AtomicState_H_	AtomicState.h	4;"	d
+BUCKET_COUNT	wordMgmt.h	15;"	d
+INPUTQUEUE_H_	InputQueue.h	2;"	d
+InputQueue	InputQueue.cpp	/^InputQueue::InputQueue() {$/;"	f	class:InputQueue
+InputQueue	InputQueue.h	/^class InputQueue {$/;"	c
+LINKEDLIST_H_	linkedlist.h	2;"	d
+MASTERID	SolidFire.cpp	2;"	d	file:
+NOBODY	AtomicState.h	/^static const int NOBODY = -1;$/;"	v
+THREADARGUMENT_H_	threadArgument.h	9;"	d
+TOPKWORDS_H_	TopKWords.h	2;"	d
+TopKWords	TopKWords.h	/^	TopKWords() {$/;"	f	class:TopKWords
+TopKWords	TopKWords.h	/^class TopKWords {$/;"	c
+WORDMGMT_H_	wordMgmt.h	9;"	d
+WORD_H_	word.h	2;"	d
+WORKER	SolidFire.cpp	1;"	d	file:
+acquireLock	InputQueue.cpp	/^void InputQueue::acquireLock(unsigned int threadId) {$/;"	f	class:InputQueue
+addNode	linkedlist.cpp	/^void linkedlist::addNode(word* sym) {$/;"	f	class:linkedlist
+addWord	TopKWords.h	/^	void addWord(word* wordToAdd) {$/;"	f	class:TopKWords
+bucketLock	wordMgmt.h	/^	AtomicState** bucketLock;$/;"	m	class:wordMgmt
+buckets	wordMgmt.h	/^	linkedlist *buckets[BUCKET_COUNT];$/;"	m	class:wordMgmt
+countMutex	SolidFire.cpp	/^pthread_mutex_t countMutex;$/;"	v
+countThresholdCondtion	SolidFire.cpp	/^pthread_cond_t countThresholdCondtion;$/;"	v
+currentNode	linkedlist.h	/^	node* currentNode; \/\/for iterator$/;"	m	class:linkedlist
+dequeueFile	InputQueue.cpp	/^string* InputQueue::dequeueFile(unsigned int threadId) {$/;"	f	class:InputQueue
+display	linkedlist.cpp	/^void linkedlist::display() {$/;"	f	class:linkedlist
+displayTable	wordMgmt.cpp	/^void wordMgmt::displayTable() {$/;"	f	class:wordMgmt
+endNode	linkedlist.cpp	/^word* linkedlist::endNode() {$/;"	f	class:linkedlist
+enqueueFile	InputQueue.cpp	/^void InputQueue::enqueueFile(string* filename, unsigned int threadId) {$/;"	f	class:InputQueue
+findWord	linkedlist.cpp	/^bool linkedlist::findWord(word* sym) {$/;"	f	class:linkedlist
+firstNode	linkedlist.h	/^	node *firstNode;$/;"	m	class:linkedlist
+getBucketCount	wordMgmt.cpp	/^int wordMgmt::getBucketCount() {$/;"	f	class:wordMgmt
+getBucketLock	wordMgmt.cpp	/^void wordMgmt::getBucketLock(int bucketId, unsigned int threadId) {$/;"	f	class:wordMgmt
+getBucketNo	wordMgmt.cpp	/^int wordMgmt::getBucketNo(string str) {$/;"	f	class:wordMgmt
+getMyId	threadArgument.h	/^  int getMyId(){$/;"	f	class:threadArgument
+getOccurrence	word.h	/^	int getOccurrence() {$/;"	f	class:word
+getSize	InputQueue.cpp	/^int InputQueue::getSize(unsigned int threadId) {$/;"	f	class:InputQueue
+getSize	linkedlist.cpp	/^int linkedlist::getSize() const {$/;"	f	class:linkedlist
+getWord	linkedlist.cpp	/^word* linkedlist::getWord(string value) {$/;"	f	class:linkedlist
+getWord	wordMgmt.cpp	/^word* wordMgmt::getWord(string value, unsigned int threadId) {$/;"	f	class:wordMgmt
+getWordAndIncrementOccurence	wordMgmt.cpp	/^bool wordMgmt::getWordAndIncrementOccurence(word* sym) {$/;"	f	class:wordMgmt
+getWordValue	word.h	/^	string* getWordValue() {$/;"	f	class:word
+globalTermination	SolidFire.cpp	/^int globalTermination = 0;$/;"	v
+hasLock	AtomicState.h	/^	const bool hasLock(const unsigned int &threadNumber) const {$/;"	f	class:AtomicState
+hashTable	SolidFire.cpp	/^wordMgmt* hashTable = new wordMgmt();$/;"	v
+iQueue	SolidFire.cpp	/^InputQueue** iQueue = new InputQueue *[4];$/;"	v
+increaseOccurence	word.h	/^	void increaseOccurence() {$/;"	f	class:word
+input	InputQueue.h	/^	queue<string*> *input;$/;"	m	class:InputQueue
+inputMutex	InputQueue.h	/^	pthread_mutex_t inputMutex;$/;"	m	class:InputQueue
+insertWord	wordMgmt.cpp	/^void wordMgmt::insertWord(word* s, unsigned int threadId) {$/;"	f	class:wordMgmt
+isLocked	AtomicState.h	/^	bool isLocked() {$/;"	f	class:AtomicState
+isTerminate	SolidFire.cpp	/^bool isTerminate(unsigned int threadId) {$/;"	f
+iterate	linkedlist.cpp	/^word* linkedlist::iterate() {$/;"	f	class:linkedlist
+iterateTable	wordMgmt.cpp	/^word* wordMgmt::iterateTable(int bucketNumber) {$/;"	f	class:wordMgmt
+lastNode	linkedlist.h	/^	node *lastNode;$/;"	m	class:linkedlist
+linkedlist	linkedlist.cpp	/^linkedlist::linkedlist() {$/;"	f	class:linkedlist
+linkedlist	linkedlist.h	/^class linkedlist {$/;"	c
+lock	InputQueue.h	/^	AtomicState* lock;$/;"	m	class:InputQueue
+lockOwner	AtomicState.h	/^	 int lockOwner;$/;"	m	class:AtomicState
+main	SolidFire.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+next	linkedlist.h	/^	node *next;$/;"	m	struct:node
+node	linkedlist.h	/^struct node {$/;"	s
+occurrence	word.h	/^	int occurrence;$/;"	m	class:word
+operator ()	TopKWords.h	/^	bool operator()(word *a, word *b) {$/;"	f	class:sortBefore
+printTopKWords	TopKWords.h	/^	void printTopKWords(int k) {$/;"	f	class:TopKWords
+readDirectory	SolidFire.cpp	/^int readDirectory(char* direc) {$/;"	f
+readFile	SolidFire.cpp	/^int readFile(string pathOfFile, unsigned int threadId) {$/;"	f
+readingDoneByMaster	SolidFire.cpp	/^bool readingDoneByMaster = false;$/;"	v
+releaseBucketLock	wordMgmt.cpp	/^void wordMgmt::releaseBucketLock(int bucketId, unsigned int threadId) {$/;"	f	class:wordMgmt
+releaseLock	AtomicState.h	/^	bool releaseLock(const unsigned int &threadNumber) {$/;"	f	class:AtomicState
+releaseLock	InputQueue.cpp	/^void InputQueue::releaseLock(unsigned int threadId) {$/;"	f	class:InputQueue
+s	linkedlist.h	/^	word* s;$/;"	m	struct:node
+s	wordMgmt.h	/^	word s;$/;"	m	class:wordMgmt
+searchWord	wordMgmt.cpp	/^bool wordMgmt::searchWord(word sym, unsigned int threadId) {$/;"	f	class:wordMgmt
+setLock	AtomicState.h	/^	bool setLock(const unsigned int &threadNumber) {$/;"	f	class:AtomicState
+setOccurrence	word.h	/^	void setOccurrence(int occurrence) {$/;"	f	class:word
+setSize	linkedlist.cpp	/^void linkedlist::setSize(int size) {$/;"	f	class:linkedlist
+setTerminate	SolidFire.cpp	/^void setTerminate(unsigned int threadId) {$/;"	f
+setTerminationCond	SolidFire.cpp	/^void setTerminationCond() {$/;"	f
+setWordValue	word.h	/^	void setWordValue(string* wordValue) {$/;"	f	class:word
+showStatus	AtomicState.h	/^	const void showStatus() {$/;"	f	class:AtomicState
+size	linkedlist.h	/^	int size;$/;"	m	class:linkedlist
+sortBefore	TopKWords.h	/^class sortBefore: public std::binary_function<word *, word *, bool> {$/;"	c
+spawnWorkers	SolidFire.cpp	/^void spawnWorkers() {$/;"	f
+startIterateTable	wordMgmt.cpp	/^void wordMgmt::startIterateTable(int bucketNumber) {$/;"	f	class:wordMgmt
+stratIterate	linkedlist.cpp	/^void linkedlist::stratIterate() {$/;"	f	class:linkedlist
+terminateProgram	SolidFire.cpp	/^bool terminateProgram = false;$/;"	v
+threadArgument	threadArgument.h	/^  threadArgument(int id){$/;"	f	class:threadArgument
+threadArgument	threadArgument.h	/^class threadArgument{$/;"	c
+threadFunction	SolidFire.cpp	/^void *threadFunction(void* threadArg) {$/;"	f
+threadId	threadArgument.h	/^  int threadId;$/;"	m	class:threadArgument
+topKMultiset	TopKWords.h	/^	multiset<word*, sortBefore> *topKMultiset;$/;"	m	class:TopKWords
+topList	SolidFire.cpp	/^TopKWords* topList = new TopKWords();$/;"	v
+topNode	linkedlist.cpp	/^word* linkedlist::topNode() {$/;"	f	class:linkedlist
+whoHasLock	AtomicState.h	/^	unsigned int whoHasLock() {$/;"	f	class:AtomicState
+word	word.h	/^	word() {$/;"	f	class:word
+word	word.h	/^	word(string* wordValue) {$/;"	f	class:word
+word	word.h	/^	word(string* wordValue, int occurence) {$/;"	f	class:word
+word	word.h	/^class word {$/;"	c
+wordMgmt	wordMgmt.cpp	/^wordMgmt::wordMgmt() {$/;"	f	class:wordMgmt
+wordMgmt	wordMgmt.h	/^class wordMgmt {$/;"	c
+wordValue	word.h	/^	string* wordValue;$/;"	m	class:word
+~AtomicState	AtomicState.h	/^	~AtomicState() {$/;"	f	class:AtomicState
+~InputQueue	InputQueue.cpp	/^InputQueue::~InputQueue() {$/;"	f	class:InputQueue
+~TopKWords	TopKWords.h	/^	~TopKWords() {$/;"	f	class:TopKWords
+~linkedlist	linkedlist.cpp	/^linkedlist::~linkedlist() {$/;"	f	class:linkedlist
+~word	word.h	/^	virtual ~word() {$/;"	f	class:word
+~wordMgmt	wordMgmt.cpp	/^wordMgmt::~wordMgmt() {$/;"	f	class:wordMgmt
